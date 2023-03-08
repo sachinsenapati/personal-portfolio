@@ -22,7 +22,7 @@
   font-size: 60px;
   font-weight: 600;
   color: var(--text-clr);
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   padding: 0 0 20px 20px;
 }
 .about-col-2 .sub-title::before {
@@ -52,6 +52,9 @@
   margin-top: 10px;
 }
 @media only screen and (max-width: 600px) {
+  #about {
+    margin-top: 60%;
+  }
   .sub-title {
     font-size: 40px;
     font-weight: 600;
@@ -67,4 +70,12 @@
   .about-col-2 {
     font-size: 14px;
   }
+  .about-col-2 .sub-title::before {
+  left: 42%;
+  width: 150px;
+}
+.about-col-2 .sub-title::after {
+  bottom: -10px;
+  left: 42%;
+}
 }

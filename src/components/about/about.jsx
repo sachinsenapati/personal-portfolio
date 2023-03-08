@@ -1,14 +1,15 @@
 import "./about.css";
 import React from "react";
+import Pic from "../../asserts/profile.jpg";
+
 import { motion } from "framer-motion";
 import { FaTelegramPlane } from "react-icons/fa";
 function about() {
   return (
     <motion.div
       id="about"
-      initial={{x:-145}}
-      whileInView={{opacity:[0,1],x:0 }}
-      transition={{ duration: 1 }}
+            initial={{x:-145}}
+      whileInView={{x:0,opacity:[0,1],transition:{duration:1} }}
     >
       <div className="container">
         <div className="row">
@@ -18,7 +19,7 @@ function about() {
             transition={{ duration: 0.5, type: "tween" }}
             className="about-col-1"
           >
-            {/* <img src=""/> */}
+            <img src={Pic} alt=""/>
           </motion.div>
           <motion.div
             whileInView={{ opacity: 1 }}

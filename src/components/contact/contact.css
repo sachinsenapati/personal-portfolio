@@ -1,3 +1,6 @@
+#contact {
+  padding: 80px 0;
+}
 .contact-left {
   flex-basis: 35%;
   padding-left: 5px;
@@ -5,10 +8,10 @@
 .contact-left::after {
   content: "";
   position: absolute;
-  top: 350%;
+  top: 420%;
   left: 40%;
   width: 3px;
-  height: 310px;
+  height: 250px;
   background: var(--text-clr);
 }
 .contact-right {
@@ -52,9 +55,10 @@
   color: var(--btn-clr);
   margin-right: 15px;
   font-size: 30px;
+  display: inline;
 }
-.i :hover{
-  color: aliceblue;
+.i :hover {
+  color: var(--icon-hover-clr);
 }
 .contact-right form {
   margin-top: 3%;
@@ -83,8 +87,8 @@ form .btn2 {
 }
 .Scroll__up {
   position: absolute;
-  right: 0rem;
-  bottom: -149rem;
+  right: -0.1rem;
+  bottom: -176rem;
   transform: rotate(270deg);
   font-weight: 200s;
   font-size: 0.9rem;
@@ -96,4 +100,30 @@ form .btn2 {
   .contact-right {
     flex-basis: 100%;
   }
+  .i {
+    color: var(--btn-clr);
+    margin-right: 15px;
+    font-size: 15px;
+    display: block;
+  }
+  .contact-left .sub-title::before {
+    left: 44%;
+    width: 175px;
+  }
+  .contact-left .sub-title::after {
+    left: 44%;
+  }
+  .Scroll__up {
+    right: -3.5rem;
+    bottom: -234rem;
+  }
+  .contact-left::after {
+  content: "";
+  position: absolute;
+  top: 550%;
+  left: 53%;
+  width: 3px;
+  height: 250px;
+  background: var(--text-clr);transform: rotate(90deg);
+}
 }

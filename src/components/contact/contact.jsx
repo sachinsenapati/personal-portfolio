@@ -8,7 +8,7 @@ function skills() {
   return (
     <motion.div
       id="contact"
-      initial={{ y: 45 }}
+      initial={{ y: -10 }}
       whileInView={{ opacity: [0, 1], y: 0 }}
       transition={{ duration: 1}}
     >

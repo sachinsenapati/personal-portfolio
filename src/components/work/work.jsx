@@ -7,9 +7,12 @@ import Todo from "../../asserts/todo.webp";
 import { motion } from "framer-motion";
 function work() {
   return (
-    <motion.div id="work"      initial={{ y: 45 }}
+    <motion.div
+      id="work"
+      initial={{ y: -15 }}
       whileInView={{ opacity: [0, 1], y: 0 }}
-      transition={{ duration: 1 }}>
+      transition={{ duration: 1 }}
+    >
       <div className="container">
         <h1 className="sub-title">My Works</h1>
         <div className="work-list">
@@ -54,6 +57,20 @@ function work() {
               </p>
             </div>
           </div>
+          {/* <div className="work">
+            <img src={Netflix} alt="" />
+            <div className="layer">
+              <h3>Netflix app</h3>
+              <p>
+                This is an netflix clone bulit using react js. and TMDB API for
+                fetching the data
+                <br />
+                <a href="#1">
+                  <CiShare1 />
+                </a>
+              </p>
+            </div>
+          </div> */}
         </div>
       </div>
     </motion.div>

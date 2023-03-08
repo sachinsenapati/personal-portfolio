@@ -35,11 +35,9 @@ const Skills = ({ theme }) => {
   return (
     <motion.div
       id="skills"
-      // whileInView={{ scale: [0, 1] }}
-      // transition={{ duration: 0.5, ease: "linear" }}
-      initial={{ y: 45 }}
-      whileInView={{ opacity: [0, 1], y: 0 }}
-      transition={{ duration: 1 }}
+      initial={{ y: 65 }}
+      whileInView={{ opacity: [0, 1], y: 35 , transition:{ duration: 1}}}
+     
     >
       <div className="container">
         <h1 className="sub-title">My Skills</h1>
