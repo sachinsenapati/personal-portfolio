@@ -1,0 +1,129 @@
+#contact {
+  padding: 80px 0;
+}
+.contact-left {
+  flex-basis: 35%;
+  padding-left: 5px;
+}
+.contact-left::after {
+  content: "";
+  position: absolute;
+  top: 420%;
+  left: 40%;
+  width: 3px;
+  height: 250px;
+  background: var(--text-clr);
+}
+.contact-right {
+  flex-basis: 60%;
+}
+.contact-left .sub-title::before {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 40%;
+  width: 320px;
+  height: 3px;
+  background: var(--text-clr);
+  transform: translateX(-50%);
+}
+.contact-left .sub-title::after {
+  content: " get in touch ";
+  position: absolute;
+  bottom: -10px;
+  left: 40%;
+  font-size: 20px;
+  color: var(--btn-clr);
+  padding: 5px;
+  background: var(--bg-clr);
+  transform: translateX(-50%);
+}
+.contact-left p {
+  margin-top: 30px;
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: var(--clr);
+  padding: 15px;
+  margin: 15px 0;
+  color: var(--text-clr);
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+}
+.i {
+  color: var(--btn-clr);
+  margin-right: 15px;
+  font-size: 30px;
+  display: inline;
+}
+.i :hover {
+  color: var(--icon-hover-clr);
+}
+.contact-right form {
+  margin-top: 3%;
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: var(--clr);
+  padding: 15px;
+  margin: 15px 0;
+  color: var(--text-clr);
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+}
+form .btn2 {
+  display: inline-block;
+  background: var(--btn-clr);
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.Scroll__up {
+  position: absolute;
+  right: -0.1rem;
+  bottom: -176rem;
+  transform: rotate(270deg);
+  font-weight: 200s;
+  font-size: 0.9rem;
+  color: var(--btn-clr);
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+  .i {
+    color: var(--btn-clr);
+    margin-right: 15px;
+    font-size: 15px;
+    display: block;
+  }
+  .contact-left .sub-title::before {
+    left: 44%;
+    width: 175px;
+  }
+  .contact-left .sub-title::after {
+    left: 44%;
+  }
+  .Scroll__up {
+    right: -3.5rem;
+    bottom: -234rem;
+  }
+  .contact-left::after {
+  content: "";
+  position: absolute;
+  top: 550%;
+  left: 53%;
+  width: 3px;
+  height: 250px;
+  background: var(--text-clr);transform: rotate(90deg);
+}
+}

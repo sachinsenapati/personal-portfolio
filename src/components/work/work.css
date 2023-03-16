@@ -1,0 +1,99 @@
+#work{
+    padding: 80px 0;
+}
+
+#work .sub-title::before{
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 13%;
+  width: 250px;
+  height: 3px;
+  background: var(--text-clr );
+  transform: translateX(-50%);
+
+}
+#work .sub-title::after{
+  content: " what i did";
+  position: absolute;
+  bottom: -10px;
+  left: 13%;
+  font-size: 20px;
+  color: var(--btn-clr);
+  padding: 5px;
+  background:var(--bg-clr);
+  transform: translateX(-50%);
+}
+.work-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 40px;
+}
+.work{
+    border-radius: 10px;
+    height:230px ;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: 230px;
+    transition:transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),var(--btn-clr));
+    border-radius:10px ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: var(--btn-clr);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: var(--text-clr);
+    width: 60px;
+    height: 160px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+@media only screen and (max-width: 600px) {
+    #work .sub-title::before{
+  left: 40%;
+  width: 150px;
+
+}
+#work .sub-title::after{
+  left: 40%;
+
+}
+    .work-list{
+        grid-template-columns: 1fr;
+    }
+}

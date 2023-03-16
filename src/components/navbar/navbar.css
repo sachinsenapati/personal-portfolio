@@ -1,0 +1,104 @@
+nav {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  box-shadow: var(--box-shadow);
+  background: var(--clr);
+  z-index: 1;
+}
+.logo {
+  width: 250px;
+  height: 80px;
+  margin-left: 160px;
+  font-size: 60px;
+  cursor: pointer;
+  display: block;
+}
+nav .logo span {
+  color: var(--btn-clr);
+}
+nav ul{
+  margin-right: 120px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: var(--text-clr);
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: var(--btn-clr);
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav .icon {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+  width: 250px;
+  height: 80px;
+  margin-left: 1px;
+  font-size: 60px;
+  cursor: pointer;
+  display: block;
+}
+  nav ul{
+  margin-right: 0px;
+}
+  nav .icon {
+    display: block;
+    font-size: 25px;
+  }
+  nav .showMenu {
+    background: var(--btn-clr);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav .Menu {
+    background: var(--btn-clr);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+}
